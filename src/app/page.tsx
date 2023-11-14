@@ -31,12 +31,12 @@ export default function Home() {
 
   return (
     <>
-      <main className="bg-gray-950 text-lg font-extralight">
-        <div className="flex w-full justify-end pr-4 pt-4">
+      <main className="bg-black text-lg font-extralight">
+        <div className="flex w-full pl-4 sm:pl-24 pr-8 sm:pr-24 pt-6 sm:pt-8">
           <Navbar />
         </div>
-        <div className="flex flex-col sm:flex-row justify-between h-screen p-4 sm:p-24">
-          <div className="flex flex-col justify-center sm:space-y-12 space-y-8 flex-1">
+        <div className="flex flex-col sm:flex-row justify-between h-screen p-4 sm:px-24">
+          <div className="flex flex-col justify-center sm:space-y-12 space-y-8 flex-1 sm:pt-0 pt-6">
             {/* <h2 className="text-2xl">Em Cartaz</h2> */}
             <div
               className="cursor-pointer"

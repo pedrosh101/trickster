@@ -1,7 +1,9 @@
 // components/NavToggle.tsx
-import { useState, useRef, MouseEvent } from "react";
+import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import logo from "../../../public/img/logo.jpg";
 
-const NavToggle = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLDivElement | null>(null);
 
@@ -15,17 +17,34 @@ const NavToggle = () => {
     }
   };
 
+  useEffect(() => {
+    const handleClick = (event: MouseEvent) => {
+      if (
+        navRef.current &&
+        !(navRef.current as Node).contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClick);
+    } else {
+      document.removeEventListener("mousedown", handleClick);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, [isOpen]);
+
   const toggleNav = () => {
     setIsOpen(!isOpen);
-    if (!isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
   };
 
   return (
-    <div>
+    <div className="flex w-full place-content-between sm:place-items-start place-items-center">
+      <Image src={logo} alt="trickster" height={110}></Image>
       <div onClick={toggleNav} className="text-2xl cursor-pointer">
         <svg fill="none" viewBox="0 0 24 24" height="1.3em">
           <path
@@ -52,4 +71,4 @@ const NavToggle = () => {
   );
 };
 
-export default NavToggle;
+export default Navbar;
