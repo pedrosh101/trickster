@@ -67,11 +67,13 @@ const Navbar = () => {
       >
         <div
           ref={navRef}
-          className={`fixed right-0 top-0 h-full w-72 sm:w-80 p-10 bg-white shadow transition-transform transform duration-700 text-black ${
+          className={`fixed flex flex-col space-y-2 right-0 top-0 h-full w-72 sm:w-80 p-10 bg-white shadow transition-transform transform duration-700 text-black ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          Conteúdo
+          <p>Em Cartaz</p>
+          <p>Sobre Nós</p>
+          <p>Onde Estamos</p>
         </div>
       </div>
     </div>

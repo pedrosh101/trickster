@@ -1,10 +1,14 @@
-import Peca from '../../components/peca'
-import React from 'react'
+import Peca from "../../components/peca";
+import React from "react";
 
 const Play = () => {
   return (
-    <Peca title='Peça 1' img='https://i.imgur.com/24T8W4e.jpg'/>
-  )
-}
+    <Peca
+      title="Terror No Beco"
+      img="https://i.imgur.com/24T8W4e.jpg"
+      classificacao="14 Anos"
+    />
+  );
+};
 
-export default Play
+export default Play;

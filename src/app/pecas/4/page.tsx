@@ -1,10 +1,14 @@
-import Peca from '../../components/peca'
-import React from 'react'
+import Peca from "../../components/peca";
+import React from "react";
 
 const Play = () => {
   return (
-    <Peca title='Peça 4' img='https://i.imgur.com/bN6kmnc.jpg'/>
-  )
-}
+    <Peca
+      title="Historietas Fantásticas, Cômicas e Inusitadas"
+      img="https://i.imgur.com/bN6kmnc.jpg"
+      classificacao="Livre"
+    />
+  );
+};
 
-export default Play
+export default Play;
