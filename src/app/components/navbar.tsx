@@ -1,7 +1,6 @@
 // components/NavToggle.tsx
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import logo from "../../../public/img/logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +43,12 @@ const Navbar = () => {
 
   return (
     <div className="flex w-full place-content-between sm:place-items-start place-items-center">
-      <Image src={logo} alt="trickster" height={110}></Image>
+      <Image
+        src="https://i.imgur.com/FzEXixN.jpg"
+        alt="trickster"
+        height={110}
+        width={100}
+      ></Image>
       <div onClick={toggleNav} className="text-2xl cursor-pointer">
         <svg fill="none" viewBox="0 0 24 24" height="1.3em">
           <path

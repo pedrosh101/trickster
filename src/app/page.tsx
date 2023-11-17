@@ -9,10 +9,10 @@ interface Images {
 }
 
 const images: Images = {
-  image1: "/plays/1.jpg",
-  image2: "/plays/2.jpg",
-  image3: "/plays/3.jpg",
-  image4: "/plays/4.jpg",
+  image1: "https://i.imgur.com/24T8W4e.jpg",
+  image2: "https://i.imgur.com/5Pqfobq.jpg",
+  image3: "https://i.imgur.com/OJwAXYW.jpg",
+  image4: "https://i.imgur.com/bN6kmnc.jpg",
 };
 
 export default function Home() {
@@ -42,28 +42,28 @@ export default function Home() {
               className="cursor-pointer"
               onMouseEnter={() => handleHover("image1")}
             >
-              <h1 className="text-4xl mb-2 font-bembo">Peça 1</h1>
+              <h1 className="text-5xl mb-2 font-bembo">Peça 1</h1>
               <h4>ESPECIFICAÇÕES DA PEÇA</h4>
             </div>
             <div
               className="cursor-pointer"
               onMouseEnter={() => handleHover("image2")}
             >
-              <h1 className="text-4xl mb-2 font-bembo ">Peça 2</h1>
+              <h1 className="text-5xl mb-2 font-bembo ">Peça 2</h1>
               <h4>ESPECIFICAÇÕES DA PEÇA</h4>
             </div>
             <div
               className="cursor-pointer"
               onMouseEnter={() => handleHover("image3")}
             >
-              <h1 className="text-4xl mb-2 font-bembo ">Peça 3</h1>
+              <h1 className="text-5xl mb-2 font-bembo ">Peça 3</h1>
               <h4>ESPECIFICAÇÕES DA PEÇA</h4>
             </div>
             <div
               className="cursor-pointer"
               onMouseEnter={() => handleHover("image4")}
             >
-              <h1 className="text-4xl mb-2 font-bembo ">Peça 4</h1>
+              <h1 className="text-5xl mb-2 font-bembo ">Peça 4</h1>
               <h4>ESPECIFICAÇÕES DA PEÇA</h4>
             </div>
           </div>
