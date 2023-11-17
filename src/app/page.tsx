@@ -40,34 +40,34 @@ export default function Home() {
           <div className="flex flex-col justify-center sm:space-y-12 space-y-8 flex-1 sm:pt-0 pt-6 sm:pr-20 ">
             <Link href="/pecas/1">
               <div onMouseEnter={() => handleHover("image1")}>
-                <h1 className="sm:text-4xl text-3xl mb-3 font-parag ">
+                <h1 className="sm:text-4xl text-3xl sm:mb-3 mb-1 font-parag ">
                   Terror No Beco
                 </h1>
-                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+                <h4 className="text-sm sm:text-lg">ESPECIFICAÇÕES DA PEÇA</h4>
               </div>
             </Link>
             <Link href="/pecas/2">
               <div onMouseEnter={() => handleHover("image2")}>
-                <h1 className="sm:text-4xl text-3xl mb-3 font-parag">
+                <h1 className="sm:text-4xl text-3xl sm:mb-3 mb-1 font-parag">
                   O Encontro Inesperado
                 </h1>
-                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+                <h4 className="text-sm sm:text-lg">ESPECIFICAÇÕES DA PEÇA</h4>
               </div>
             </Link>
             <Link href="/pecas/3">
               <div onMouseEnter={() => handleHover("image3")}>
-                <h1 className="sm:text-4xl text-3xl  mb-3 font-parag">
+                <h1 className="sm:text-4xl text-3xl  sm:mb-3 mb-1 font-parag">
                   Lola Bufa
                 </h1>
-                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+                <h4 className="text-sm sm:text-lg">ESPECIFICAÇÕES DA PEÇA</h4>
               </div>
             </Link>
             <Link href="/pecas/4">
               <div onMouseEnter={() => handleHover("image4")}>
-                <h1 className="sm:text-4xl text-3xl  mb-3 font-parag">
+                <h1 className="sm:text-4xl text-3xl  sm:mb-3 mb-1 font-parag">
                   Historietas Fantásticas, Cômicas e Inusitadas
                 </h1>
-                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+                <h4 className="text-sm sm:text-lg">ESPECIFICAÇÕES DA PEÇA</h4>
               </div>
             </Link>
           </div>
