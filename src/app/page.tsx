@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Navbar from "./components/navbar";
+import Link from "next/link";
 
 interface Images {
   [key: string]: string;
@@ -37,14 +38,15 @@ export default function Home() {
         </div>
         <div className="flex flex-col sm:flex-row justify-between h-screen p-4 sm:px-24">
           <div className="flex flex-col justify-center sm:space-y-12 space-y-8 flex-1 sm:pt-0 pt-6">
-            {/* <h2 className="text-2xl">Em Cartaz</h2> */}
-            <div
-              className="cursor-pointer"
-              onMouseEnter={() => handleHover("image1")}
-            >
-              <h1 className="text-5xl mb-2 font-bembo">Peça 1</h1>
-              <h4>ESPECIFICAÇÕES DA PEÇA</h4>
-            </div>
+            <Link href="/pecas/1">
+              <div
+                className="cursor-pointer"
+                onMouseEnter={() => handleHover("image1")}
+              >
+                <h1 className="text-5xl mb-2 font-bembo">Peça 1</h1>
+                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+              </div>
+            </Link>
             <div
               className="cursor-pointer"
               onMouseEnter={() => handleHover("image2")}
