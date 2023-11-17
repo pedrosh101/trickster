@@ -3,7 +3,7 @@ import React from 'react'
 
 const Play = () => {
   return (
-    <Peca title='Peça 1' img='https://i.imgur.com/24T8W4e.jpg'/>
+    <Peca title='Peça 2' img='https://i.imgur.com/5Pqfobq.jpg'/>
   )
 }
 

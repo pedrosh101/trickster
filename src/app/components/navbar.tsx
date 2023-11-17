@@ -1,6 +1,7 @@
 // components/NavToggle.tsx
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,13 +43,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full place-content-between sm:place-items-start place-items-center">
-      <Image
-        src="https://i.imgur.com/FzEXixN.jpg"
-        alt="trickster"
-        height={110}
-        width={100}
-      ></Image>
+    <div className="flex w-full place-content-between sm:place-items-start place-items-center font-parag text-xl">
+      <Link href="/">
+        <Image
+          src="https://i.imgur.com/FzEXixN.jpg"
+          alt="trickster"
+          height={110}
+          width={100}
+        ></Image>
+      </Link>
       <div onClick={toggleNav} className="text-2xl cursor-pointer">
         <svg fill="none" viewBox="0 0 24 24" height="1.3em">
           <path
@@ -64,7 +67,7 @@ const Navbar = () => {
       >
         <div
           ref={navRef}
-          className={`fixed right-0 top-0 h-full w-80 p-10 bg-white shadow transition-transform transform duration-700 text-black ${
+          className={`fixed right-0 top-0 h-full w-72 sm:w-80 p-10 bg-white shadow transition-transform transform duration-700 text-black ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >

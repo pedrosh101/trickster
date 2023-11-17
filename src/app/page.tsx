@@ -36,38 +36,32 @@ export default function Home() {
         <div className="flex w-full pl-4 sm:pl-24 pr-8 sm:pr-24 pt-6 sm:pt-8">
           <Navbar />
         </div>
-        <div className="flex flex-col sm:flex-row justify-between h-screen p-4 sm:px-24">
+        <div className="flex flex-col sm:flex-row justify-between h-screen p-4 pb-16 sm:px-24">
           <div className="flex flex-col justify-center sm:space-y-12 space-y-8 flex-1 sm:pt-0 pt-6">
             <Link href="/pecas/1">
-              <div
-                className="cursor-pointer"
-                onMouseEnter={() => handleHover("image1")}
-              >
-                <h1 className="text-5xl mb-2 font-bembo">Peça 1</h1>
+              <div onMouseEnter={() => handleHover("image1")}>
+                <h1 className="text-5xl mb-3 font-parag">Peça 1</h1>
                 <h4>ESPECIFICAÇÕES DA PEÇA</h4>
               </div>
             </Link>
-            <div
-              className="cursor-pointer"
-              onMouseEnter={() => handleHover("image2")}
-            >
-              <h1 className="text-5xl mb-2 font-bembo ">Peça 2</h1>
-              <h4>ESPECIFICAÇÕES DA PEÇA</h4>
-            </div>
-            <div
-              className="cursor-pointer"
-              onMouseEnter={() => handleHover("image3")}
-            >
-              <h1 className="text-5xl mb-2 font-bembo ">Peça 3</h1>
-              <h4>ESPECIFICAÇÕES DA PEÇA</h4>
-            </div>
-            <div
-              className="cursor-pointer"
-              onMouseEnter={() => handleHover("image4")}
-            >
-              <h1 className="text-5xl mb-2 font-bembo ">Peça 4</h1>
-              <h4>ESPECIFICAÇÕES DA PEÇA</h4>
-            </div>
+            <Link href="/pecas/2">
+              <div onMouseEnter={() => handleHover("image2")}>
+                <h1 className="text-5xl mb-3 font-parag">Peça 2</h1>
+                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+              </div>
+            </Link>
+            <Link href="/pecas/3">
+              <div onMouseEnter={() => handleHover("image3")}>
+                <h1 className="text-5xl mb-3 font-parag">Peça 3</h1>
+                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+              </div>
+            </Link>
+            <Link href="/pecas/4">
+              <div onMouseEnter={() => handleHover("image4")}>
+                <h1 className="text-5xl mb-3 font-parag">Peça 4</h1>
+                <h4>ESPECIFICAÇÕES DA PEÇA</h4>
+              </div>
+            </Link>
           </div>
 
           <div
@@ -84,6 +78,9 @@ export default function Home() {
               }`}
             />
           </div>
+        </div>
+        <div className="flex bg-clr1 text-black font-parag text-4xl pl-4 sm:pl-24 py-28">
+          <p>Proin aliquet a urna eget suscipit. Suspendisse ac enim vitae lacus sodales blandit. Aliquam erat volutpat. Fusce eleifend diam non lobortis vulputate. Sed egestas aliquet condimentum. Etiam facilisis lorem sed neque iaculis dictum. Morbi vulputate dictum tellus eu mollis. Maecenas ornare ante nec luctus tempus.</p>
         </div>
       </main>
     </>

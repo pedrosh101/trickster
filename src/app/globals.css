@@ -7,12 +7,21 @@
   src: url("../../public/fonts/BemboStd.otf");
 }
 
+@font-face {
+  font-family: "TT";
+  src: url("../../public/fonts/EurostileLTStd-Demi.otf");
+}
+
+@font-face {
+  font-family: "parag";
+  src: url("../../public/fonts/HelveticaLTStd-Light.otf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,7 +29,6 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-  
 }
 
 body {

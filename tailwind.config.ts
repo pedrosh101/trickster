@@ -13,8 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
       fontFamily: {
         bembo: ["BEMBO"],
+        tt: ["TT"],
+        parag: ["parag"],
+      },
+      colors: {
+        clr1: "#F4DFC8",
       },
     },
   },
